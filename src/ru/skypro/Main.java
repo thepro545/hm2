@@ -25,40 +25,49 @@ public class Main {
 // Задание 3
 
         byte bananas = 80;
+        int countOfBananas = 5;
         byte milk = 105;
+        int countOfMilk = 2;
         byte icecream = 100;
+        int countOfIcecream = 2;
         byte eggs = 70;
+        int countOfEggs = 4;
 
-        float breakfast = bananas * 5 + milk * 2 + icecream * 2 + eggs * 4;
+        float breakfast = bananas * countOfBananas + milk * countOfMilk + icecream * countOfIcecream + eggs * countOfEggs;
+        float gramsInKil = breakfast/1000;
 
         System.out.println("Вес завтрака = " + breakfast + " грамм");
-        System.out.println("Вес завтрака = " + breakfast/1000 + " кг");
+        System.out.println("Вес завтрака = " + gramsInKil + " кг");
 
 // Задание 4
 
         int weight = 7000;
-        int lost1 = 250;
-        int lost2 = 500;
+        int lost250 = 250;
+        int lost500 = 500;
 
-        int res1 = 7000/250;
-        int res2 = 7000/500;
+        int daysIfLost250 = 7000/lost250;
+        int daysIfLost500 = 7000/lost500;
 
-        System.out.println("Нужно " + res1 + " дней, чтобы похудеть (при 250 гр в день)");
-        System.out.println("Нужно " + res2 + " дней, чтобы похудеть (при 500 гр в день)");
-        System.out.println("В среднем нужен " + ((res1+res2)/2) + " день, чтобы похудеть");
+        System.out.println("Нужно " + daysIfLost250 + " дней, чтобы похудеть (при 250 гр в день)");
+        System.out.println("Нужно " + daysIfLost500 + " дней, чтобы похудеть (при 500 гр в день)");
+        System.out.println("В среднем нужен " + ((daysIfLost250+daysIfLost500)/2) + " день, чтобы похудеть");
 
 // Задание 5
 
-        int salaryM = 67760;
-        int salaryD = 83690;
-        int salaryK = 76230;
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKris = 76230;
 
-        int sMy = salaryM * 12;
-        int sDy = salaryD * 12;
-        int sKy = salaryK * 12;
+        int salaryMashaYear = salaryMasha * 12;
+        int salaryDenisYear = salaryDenis * 12;
+        int salaryKrisYear = salaryKris * 12;
 
-        System.out.println("Маша теперь получает " + sMy*1.1 + " рублей. Годовой доход вырос на " + (sMy*1.1-sMy) + " рублей");
-        System.out.println("Денис теперь получает " + sDy*1.1 + " рублей. Годовой доход вырос на " + (sDy*1.1-sDy) + " рублей");
-        System.out.println("Кристина теперь получает " + sKy*1.1 + " рублей. Годовой доход вырос на " + (sKy*1.1-sKy) + " рублей");
+        double salaryMashaYearAfter = salaryMashaYear * 1.1;
+        double salaryDenisYearAfter = salaryDenisYear * 1.1;
+        double salaryKrisYearAfter = salaryKrisYear * 1.1;
+
+        System.out.println("Маша теперь получает " + salaryMashaYearAfter + " рублей. Годовой доход вырос на " + (salaryMashaYearAfter-salaryMashaYear) + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisYearAfter + " рублей. Годовой доход вырос на " + (salaryDenisYearAfter-salaryDenisYear) + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKrisYearAfter + " рублей. Годовой доход вырос на " + (salaryKrisYearAfter-salaryKrisYear) + " рублей");
     }
 }
