@@ -1,5 +1,5 @@
 package ru.skypro;
-
+// Задание 1
 public class Main {
 
     public static void main(String[] args) {
@@ -10,9 +10,64 @@ public class Main {
         long test4 = 9000000000L;
         float test5 = 2312.2021f;
         double test6 = 23122021.23122021;
-        boolean test7 = true;
-        boolean test8 = false;
 
         System.out.println ("Выводить ведь не надо  `|_(0-o)_/`");
+
+
+// Задание 2
+
+        float boxerWeight1 = 78.2f;
+        float boxerWeight2 = 82.7f;
+
+        System.out.println("Общий вес бойцов = " + (boxerWeight1 + boxerWeight2) + " кг");
+        System.out.println("Разница в весе бойцов = " + (boxerWeight2 - boxerWeight1) + " кг");
+
+// Задание 3
+
+        byte bananas = 80;
+        int countOfBananas = 5;
+        byte milk = 105;
+        int countOfMilk = 2;
+        byte icecream = 100;
+        int countOfIcecream = 2;
+        byte eggs = 70;
+        int countOfEggs = 4;
+
+        float breakfast = bananas * countOfBananas + milk * countOfMilk + icecream * countOfIcecream + eggs * countOfEggs;
+        float gramsInKil = breakfast/1000;
+
+        System.out.println("Вес завтрака = " + breakfast + " грамм");
+        System.out.println("Вес завтрака = " + gramsInKil + " кг");
+
+// Задание 4
+
+        int weight = 7000;
+        int lost250 = 250;
+        int lost500 = 500;
+
+        int daysIfLost250 = 7000/lost250;
+        int daysIfLost500 = 7000/lost500;
+
+        System.out.println("Нужно " + daysIfLost250 + " дней, чтобы похудеть (при 250 гр в день)");
+        System.out.println("Нужно " + daysIfLost500 + " дней, чтобы похудеть (при 500 гр в день)");
+        System.out.println("В среднем нужен " + ((daysIfLost250+daysIfLost500)/2) + " день, чтобы похудеть");
+
+// Задание 5
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKris = 76230;
+
+        int salaryMashaYear = salaryMasha * 12;
+        int salaryDenisYear = salaryDenis * 12;
+        int salaryKrisYear = salaryKris * 12;
+
+        double salaryMashaYearAfter = salaryMashaYear * 1.1;
+        double salaryDenisYearAfter = salaryDenisYear * 1.1;
+        double salaryKrisYearAfter = salaryKrisYear * 1.1;
+
+        System.out.println("Маша теперь получает " + salaryMashaYearAfter + " рублей. Годовой доход вырос на " + (salaryMashaYearAfter-salaryMashaYear) + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisYearAfter + " рублей. Годовой доход вырос на " + (salaryDenisYearAfter-salaryDenisYear) + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKrisYearAfter + " рублей. Годовой доход вырос на " + (salaryKrisYearAfter-salaryKrisYear) + " рублей");
     }
 }
