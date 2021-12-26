@@ -24,17 +24,18 @@ public class Main {
 
 // Задание 3
 
-        byte bananas = 80;
+        int bananas = 80;
         int countOfBananas = 5;
-        byte milk = 105;
+        int milk = 105;
         int countOfMilk = 2;
-        byte icecream = 100;
+        int Icecream = 100;
         int countOfIcecream = 2;
-        byte eggs = 70;
+        int eggs = 70;
         int countOfEggs = 4;
+        int grammInKg = 1000;
 
-        float breakfast = bananas * countOfBananas + milk * countOfMilk + icecream * countOfIcecream + eggs * countOfEggs;
-        float gramsInKil = breakfast/1000;
+        float breakfast = bananas * countOfBananas + milk * countOfMilk + Icecream * countOfIcecream + eggs * countOfEggs;
+        float gramsInKil = breakfast/grammInKg;
 
         System.out.println("Вес завтрака = " + breakfast + " грамм");
         System.out.println("Вес завтрака = " + gramsInKil + " кг");
@@ -45,8 +46,8 @@ public class Main {
         int lost250 = 250;
         int lost500 = 500;
 
-        int daysIfLost250 = 7000/lost250;
-        int daysIfLost500 = 7000/lost500;
+        int daysIfLost250 = weight/lost250;
+        int daysIfLost500 = weight/lost500;
 
         System.out.println("Нужно " + daysIfLost250 + " дней, чтобы похудеть (при 250 гр в день)");
         System.out.println("Нужно " + daysIfLost500 + " дней, чтобы похудеть (при 500 гр в день)");
@@ -57,14 +58,15 @@ public class Main {
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryKris = 76230;
+        float percent = 10f;
 
         int salaryMashaYear = salaryMasha * 12;
         int salaryDenisYear = salaryDenis * 12;
         int salaryKrisYear = salaryKris * 12;
 
-        float salaryMashaYearAfter = salaryMashaYear * 1.1f;
-        float salaryDenisYearAfter = salaryDenisYear * 1.1f;
-        float salaryKrisYearAfter = salaryKrisYear * 1.1f;
+        float salaryMashaYearAfter = salaryMashaYear * (1+percent/100);
+        float salaryDenisYearAfter = salaryDenisYear * (1+percent/100);
+        float salaryKrisYearAfter = salaryKrisYear * (1+percent/100);
 
 //        System.out.printf("%.0f", salaryMashaYearAfter);
 //        System.out.println();
