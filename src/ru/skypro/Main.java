@@ -28,14 +28,14 @@ public class Main {
         int countOfBananas = 5;
         int milk = 105;
         int countOfMilk = 2;
-        int Icecream = 100;
-        int countOfIcecream = 2;
+        int iceCream = 100;
+        int countOfIceCream = 2;
         int eggs = 70;
         int countOfEggs = 4;
-        int grammInKg = 1000;
+        int gramInKg = 1000;
 
-        float breakfast = bananas * countOfBananas + milk * countOfMilk + Icecream * countOfIcecream + eggs * countOfEggs;
-        float gramsInKil = breakfast/grammInKg;
+        float breakfast = bananas * countOfBananas + milk * countOfMilk + iceCream * countOfIceCream + eggs * countOfEggs;
+        float gramsInKil = breakfast/gramInKg;
 
         System.out.println("Вес завтрака = " + breakfast + " грамм");
         System.out.println("Вес завтрака = " + gramsInKil + " кг");
