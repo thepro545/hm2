@@ -62,10 +62,12 @@ public class Main {
         int salaryDenisYear = salaryDenis * 12;
         int salaryKrisYear = salaryKris * 12;
 
-        double salaryMashaYearAfter = salaryMashaYear * 1.1;
-        double salaryDenisYearAfter = salaryDenisYear * 1.1;
-        double salaryKrisYearAfter = salaryKrisYear * 1.1;
+        float salaryMashaYearAfter = salaryMashaYear * 1.1f;
+        float salaryDenisYearAfter = salaryDenisYear * 1.1f;
+        float salaryKrisYearAfter = salaryKrisYear * 1.1f;
 
+//        System.out.printf("%.0f", salaryMashaYearAfter);
+//        System.out.println();
         System.out.println("Маша теперь получает " + salaryMashaYearAfter + " рублей. Годовой доход вырос на " + (salaryMashaYearAfter-salaryMashaYear) + " рублей");
         System.out.println("Денис теперь получает " + salaryDenisYearAfter + " рублей. Годовой доход вырос на " + (salaryDenisYearAfter-salaryDenisYear) + " рублей");
         System.out.println("Кристина теперь получает " + salaryKrisYearAfter + " рублей. Годовой доход вырос на " + (salaryKrisYearAfter-salaryKrisYear) + " рублей");
