@@ -58,15 +58,15 @@ public class Main {
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryKris = 76230;
-        float percent = 10f;
+        int percent = 10;
 
         int salaryMashaYear = salaryMasha * 12;
         int salaryDenisYear = salaryDenis * 12;
         int salaryKrisYear = salaryKris * 12;
 
-        float salaryMashaYearAfter = salaryMashaYear * (1+percent/100);
-        float salaryDenisYearAfter = salaryDenisYear * (1+percent/100);
-        float salaryKrisYearAfter = salaryKrisYear * (1+percent/100);
+        float salaryMashaYearAfter = salaryMashaYear * (1+percent/100f);
+        float salaryDenisYearAfter = salaryDenisYear * (1+percent/100f);
+        float salaryKrisYearAfter = salaryKrisYear * (1+percent/100f);
 
 //        System.out.printf("%.0f", salaryMashaYearAfter);
 //        System.out.println();
