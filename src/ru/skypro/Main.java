@@ -96,7 +96,7 @@ public class Main {
 // Задание 8
 
         int a2 = 789;
-        int b2 = (a2 % 100 - a2 % 10) / 10;
+        int b2 = a2 % 100 / 10;
 
         System.out.println(b2);
     }
