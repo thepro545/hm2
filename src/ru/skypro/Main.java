@@ -73,5 +73,31 @@ public class Main {
         System.out.println("Маша теперь получает " + salaryMashaYearAfter + " рублей. Годовой доход вырос на " + (salaryMashaYearAfter-salaryMashaYear) + " рублей");
         System.out.println("Денис теперь получает " + salaryDenisYearAfter + " рублей. Годовой доход вырос на " + (salaryDenisYearAfter-salaryDenisYear) + " рублей");
         System.out.println("Кристина теперь получает " + salaryKrisYearAfter + " рублей. Годовой доход вырос на " + (salaryKrisYearAfter-salaryKrisYear) + " рублей");
+
+// Задание 6
+
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+
+        int result = a * (b+(c-d*e));
+        result = -result;
+        System.out.println(result);
+
+// Задание 7
+
+        int a1 = 5;
+        int b1 = 7;
+        a1 -= a1 - 7;
+        b1 -= b1 - 5;
+        System.out.println(a1 + " " + b1);
+// Задание 8
+
+        int a2 = 789;
+        int b2 = (a2 % 100 - a2 % 10) / 10;
+
+        System.out.println(b2);
     }
 }
