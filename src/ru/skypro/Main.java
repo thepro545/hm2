@@ -24,17 +24,18 @@ public class Main {
 
 // Задание 3
 
-        byte bananas = 80;
+        int bananas = 80;
         int countOfBananas = 5;
-        byte milk = 105;
+        int milk = 105;
         int countOfMilk = 2;
-        byte icecream = 100;
-        int countOfIcecream = 2;
-        byte eggs = 70;
+        int iceCream = 100;
+        int countOfIceCream = 2;
+        int eggs = 70;
         int countOfEggs = 4;
+        int gramInKg = 1000;
 
-        float breakfast = bananas * countOfBananas + milk * countOfMilk + icecream * countOfIcecream + eggs * countOfEggs;
-        float gramsInKil = breakfast/1000;
+        float breakfast = bananas * countOfBananas + milk * countOfMilk + iceCream * countOfIceCream + eggs * countOfEggs;
+        float gramsInKil = breakfast/gramInKg;
 
         System.out.println("Вес завтрака = " + breakfast + " грамм");
         System.out.println("Вес завтрака = " + gramsInKil + " кг");
@@ -45,8 +46,8 @@ public class Main {
         int lost250 = 250;
         int lost500 = 500;
 
-        int daysIfLost250 = 7000/lost250;
-        int daysIfLost500 = 7000/lost500;
+        int daysIfLost250 = weight/lost250;
+        int daysIfLost500 = weight/lost500;
 
         System.out.println("Нужно " + daysIfLost250 + " дней, чтобы похудеть (при 250 гр в день)");
         System.out.println("Нужно " + daysIfLost500 + " дней, чтобы похудеть (при 500 гр в день)");
@@ -57,17 +58,46 @@ public class Main {
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryKris = 76230;
+        int percent = 10;
 
         int salaryMashaYear = salaryMasha * 12;
         int salaryDenisYear = salaryDenis * 12;
         int salaryKrisYear = salaryKris * 12;
 
-        double salaryMashaYearAfter = salaryMashaYear * 1.1;
-        double salaryDenisYearAfter = salaryDenisYear * 1.1;
-        double salaryKrisYearAfter = salaryKrisYear * 1.1;
+        float salaryMashaYearAfter = salaryMashaYear * (1+percent/100f);
+        float salaryDenisYearAfter = salaryDenisYear * (1+percent/100f);
+        float salaryKrisYearAfter = salaryKrisYear * (1+percent/100f);
 
+//        System.out.printf("%.0f", salaryMashaYearAfter);
+//        System.out.println();
         System.out.println("Маша теперь получает " + salaryMashaYearAfter + " рублей. Годовой доход вырос на " + (salaryMashaYearAfter-salaryMashaYear) + " рублей");
         System.out.println("Денис теперь получает " + salaryDenisYearAfter + " рублей. Годовой доход вырос на " + (salaryDenisYearAfter-salaryDenisYear) + " рублей");
         System.out.println("Кристина теперь получает " + salaryKrisYearAfter + " рублей. Годовой доход вырос на " + (salaryKrisYearAfter-salaryKrisYear) + " рублей");
+
+// Задание 6
+
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+
+        int result = a * (b+(c-d*e));
+        result = -result;
+        System.out.println(result);
+
+// Задание 7
+
+        int a1 = 5;
+        int b1 = 7;
+        a1 -= a1 - 7;
+        b1 -= b1 - 5;
+        System.out.println(a1 + " " + b1);
+// Задание 8
+
+        int a2 = 789;
+        int b2 = a2 % 100 / 10;
+
+        System.out.println(b2);
     }
 }
